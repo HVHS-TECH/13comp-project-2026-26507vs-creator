@@ -3,24 +3,21 @@ body {
   padding: 0;
 }
 
-h2, p {
-  margin: 10px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
+
 }
 
 ul li {
   float: left;
 }
 
-ul li a {
+ul li a, #userStatus {
   display: block;
   color: rgb(105, 103, 103);
   text-align: center;
@@ -36,10 +33,30 @@ ul li a.active {
   background-color: #85d1c7;
 }
 
-.centre {
-  float: none;
+.welcome {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 45%;
+  padding: 14px 16px;
+  color: rgb(105, 103, 103);
+  font-size: 20px;
+}
+
+
+/* Game Selection Buttons */
+.gameSelection button{
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(105, 103, 103);
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.gameSelection button:hover {
+  background-color: #dddddd;
+}
+
+.gameSelection {
+  text-align: center;
+
 }

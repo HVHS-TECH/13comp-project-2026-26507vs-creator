@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
 </head>
+
 <body>
 <!-- Nav Bar -->
-<ul>
-  <li><a class="active" href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-  <li><h4 class="centre">Welcome to the Website</h4></li>
-  <li style="float:right"><a href="#about">About</a></li>
-</ul>
+<nav>
+  <ul>
+    <li><a class="active" href="default.asp">Home</a></li>
+    <li><a href="news.asp">Help</a></li>
+    <li><a href="contact.asp">Log out</a></li>
 
+    <li class="welcome">Welcome to the Website</li>
+
+    <li style="float:right" id="userStatus"></li>
+  </ul>
+</nav>
+
+<!-- Buttons -->
+ <div class="gameSelection">
+    <button class="PSR"> Play PSR</button>
+    <button class="GTN"> Play GTN</button>
+ </div>
+
+<script src="script.js"></script>
 </body>
 </html>
