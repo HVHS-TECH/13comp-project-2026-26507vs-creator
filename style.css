@@ -3,6 +3,8 @@ body {
   padding: 0;
 }
 
+
+/* Navigation Bar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -44,10 +46,11 @@ ul li a.active {
 
 /* Game Selection Buttons */
 .gameSelection button{
-  padding: 8px 16px;
+  padding: 20px 40px;
   font-size: 15px;
   cursor: pointer;
   color: rgb(105, 103, 103);
+  font-size: 20px;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
 }
@@ -58,5 +61,40 @@ ul li a.active {
 
 .gameSelection {
   text-align: center;
-
 }
+
+.GTN {
+  position: absolute;
+  right: 25%;
+  transform: translateX(50%);
+  top: 70%;
+}
+
+
+/* Center Line */
+.centerLine {
+  width: 2px;
+  height: 100vh;
+  background-color: rgb(105, 103, 103);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Left side of the welcome page*/
+.leftSide, .rightSide {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftSide img, .rightSide img {
+  width: 80%;
+}
+
+.description {
+  color: rgb(105, 103, 103);
+}
+
+/* Right side of the welcome page*/
