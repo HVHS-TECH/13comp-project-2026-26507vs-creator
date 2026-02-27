@@ -37,7 +37,8 @@ ul li a.active {
 
 .welcome {
   position: absolute;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 14px 16px;
   color: rgb(105, 103, 103);
   font-size: 20px;
@@ -63,38 +64,37 @@ ul li a.active {
   text-align: center;
 }
 
-.GTN {
-  position: absolute;
-  right: 25%;
-  transform: translateX(50%);
-  top: 70%;
-}
-
 
 /* Center Line */
 .centerLine {
   width: 2px;
-  height: 100vh;
   background-color: rgb(105, 103, 103);
-  position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Left side of the welcome page*/
+
 .leftSide, .rightSide {
+  flex: 1;
   display: flex;
   width: 50%;
   flex-direction: column;
   align-items: center;
 }
 
-.leftSide img, .rightSide img {
+.leftSide img {
   width: 80%;
+}
+
+.rightSide img{
+  width: 110%;
 }
 
 .description {
   color: rgb(105, 103, 103);
 }
 
-/* Right side of the welcome page*/
+.splitContainer {
+  display: flex;
+  height: calc(100vh - 20px);
+}
