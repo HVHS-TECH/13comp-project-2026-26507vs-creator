@@ -48,22 +48,18 @@ ul li a.active {
 
 
 /* Game Selection Buttons */
-.gameSelection button{
+.PSR, .GTN {
   padding: 20px 40px;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
   color: rgb(105, 103, 103);
-  font-size: 20px;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
+
 }
 
-.gameSelection button:hover {
+.PSR:hover, .GTN:hover {
   background-color: #dddddd;
-}
-
-.gameSelection {
-  text-align: center;
 }
 
 
@@ -82,24 +78,27 @@ ul li a.active {
   width: 50%;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 }
 
 .leftSide img {
-  width: 80%;
+  width: 78%;
 }
 
 .rightSide img{
-  width: 110%;
-}
-
-.description {
-  color: rgb(105, 103, 103);
+  width: 100%;
 }
 
 .splitContainer {
   display: flex;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 48px);
 }
+
+.description {
+  text-align: center;
+  color: rgb(105, 103, 103);
+}
+
 
 /* ===== LOGIN PAGE ===== */
 .loginPage {
@@ -128,10 +127,9 @@ ul li a.active {
 
 .loginPage button {
   padding: 20px 40px;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
   color: rgb(105, 103, 103);
-  font-size: 20px;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
 }
