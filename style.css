@@ -137,3 +137,11 @@ ul li a.active {
 .loginPage button:hover {
   background-color: #dddddd;
 }
+
+
+/* ===== SIGN UP PAGE ===== */
+.signUpPageTitle{
+  text-align: center;
+  font-size: x-large;
+  color: rgb(105, 103, 103);
+}
