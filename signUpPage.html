@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
 </head>
-<body>
-    <div class="signUpContainer">
-    <h1 class="signUpPageTitle">Create Your Account</h1>
 
-    <form>
-        <p>First name</p>
-        <input type="text" placeholder="E.G John" required>
-        <p>Last name</p>
-        <input type="text" placeholder="E.G Doe" required>
-        <p>Email</p>
-        <input type="email" placeholder="E.G john.doe@gmail.com" required>
-        <p>Age</p>
-        <input type="number" placeholder="E.G 45" required>
-        <p>Gender</p>
-        <select>
-            <option>Select One</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Other</option>
-        </select>
-    </form>
+<body class="blueBorder">
+
+    <div class="signUpContainer">
+        <h1 class="signUpPageTitle">Create Your Account</h1>
+
+        <form>
+            <div class="inputItem">
+                <p>Full name</p>
+                <input type="text" placeholder="E.G John Doe" required>
+            </div>
+
+            <div class="inputItem">
+                <p>Username</p>
+                <input type="text" placeholder="E.G JDog" required>
+            </div>
+
+            <div class="inputItem">
+                <p>Email</p>
+                <input type="email" placeholder="E.G john.doe@gmail.com" required>
+            </div>
+
+            <div class="inputItem">
+                <p>Age</p>
+                <input type="number" placeholder="E.G 35" required>
+            </div>
+
+            <div class="inputItem">
+                <p>Gender</p>
+                <select>
+                    <option>Select One</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="inputItem">
+                <p>Region</p>
+                <input type="text" placeholder="E.G Auckland" required>
+            </div>
+
+        </form>
+
+        <button class="submitButton">Submit</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
