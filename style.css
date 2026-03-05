@@ -157,11 +157,16 @@ ul li a.active {
   gap: 20px;
 }
 
+.centre {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .signUpContainer {
   width: 500px;
   text-align: center;
   margin: auto;
-  margin-top: 50px;
 }
 
 .inputItem {
@@ -184,6 +189,6 @@ ul li a.active {
 }
 
 .blueBorder {
+  height: calc(100vh - 10px);
   border: 5px solid #85d1c7;
-  height: 98.3vh;
 }
