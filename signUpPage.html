@@ -16,27 +16,27 @@
             <form>
                 <div class="inputItem">
                     <p>Full name</p>
-                    <input type="text" placeholder="E.G John Doe" required>
+                    <input type="text" id="name" placeholder="E.G John Doe" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Username</p>
-                    <input type="text" placeholder="E.G JDog" required>
+                    <input type="text" id="username" placeholder="E.G JDog" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Email</p>
-                    <input type="email" placeholder="E.G john.doe@gmail.com" required>
+                    <input type="email" id="email" placeholder="E.G john.doe@gmail.com" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Age</p>
-                    <input type="number" placeholder="E.G 35" required>
+                    <input type="number" id="age" placeholder="E.G 35" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Gender</p>
-                    <select>
+                    <select id="gender">
                         <option>Select One</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -46,16 +46,17 @@
 
                 <div class="inputItem">
                     <p>Region</p>
-                    <input type="text" placeholder="E.G Auckland" required>
+                    <input type="text" id="region" placeholder="E.G Auckland" required>
                 </div>
 
             </form>
 
-            <button class="submitButton">Submit</button>
+            <button onclick="writeRec()" class="submitButton">Submit</button>
         </div>
     </div>
 
     <script type="module" src="script.js"></script>
+    <script type="module" src="signUpPage.js"></script>
 </body>
 
 </html>

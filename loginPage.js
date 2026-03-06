@@ -9,13 +9,9 @@
 // Diagnostic code lines have a comment appended to them //DIAG
 /**************************************************************/
 
-import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut }
+import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged }
 
     from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-
-import { initializeApp }
-
-    from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 
 import { getDatabase, ref, set, get, push }
 

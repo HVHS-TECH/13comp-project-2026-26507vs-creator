@@ -8,10 +8,10 @@
 // 
 // Diagnostic code lines have a comment appended to them //DIAG
 /**************************************************************/
-import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 import { initFirebase } from './script.js';
-
 const { AUTH } = initFirebase(); // Get your Firebase auth object
+
 
 function fb_logout() {
     signOut(AUTH)
