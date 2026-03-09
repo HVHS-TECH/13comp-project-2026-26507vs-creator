@@ -175,17 +175,23 @@ ul li a.active {
 }
 
 .submitButton {
-  padding: 13px 26px;
   font-size: 15px;
   cursor: pointer;
   color: rgb(105, 103, 103);
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
   margin: 40px;
+  text-align: center;
 }
 
 .submitButton:hover {
   background-color: #85d1c7;
+}
+
+#submit {
+  grid-column: span 2;
+  justify-self: center;
+    padding: 13px 26px;
 }
 
 .blueBorder {

@@ -36,7 +36,7 @@ function writeRec() {
 
     .then(() => {
         console.log("Record written successfully");
-        window.location.href = "welcomePage.html";
+       // window.location.href = "welcomePage.html";
     })
 
     .catch((error) => {
