@@ -18,7 +18,7 @@ function fb_logout() {
         .then(() => {
             console.log("User signed out successfully.");
             // Send them back to login page
-            //window.location.href = "loginPage.html";
+            window.location.href = "loginPage.html";
         })
         .catch((error) => {
             console.error("Error signing out:", error);

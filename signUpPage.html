@@ -16,22 +16,22 @@
             <form>
                 <div class="inputItem">
                     <p>Full name</p>
-                    <input type="text" id="name" placeholder="E.G John Doe" required>
+                    <input type="text" id="name" pattern="[A-Za-z ]+"  placeholder="E.G John Doe" title="Please enter your full name" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Username</p>
-                    <input type="text" id="username" placeholder="E.G JDog" required>
+                    <input type="text" id="username" pattern="[A-Za-z0-9]+" placeholder="E.G JDog" title="Please enter a valid username" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Email</p>
-                    <input type="email" id="email" placeholder="E.G john.doe@gmail.com" required>
+                    <input type="email" id="email" placeholder="E.G john.doe@gmail.com" title="Please enter a valid email address" required>
                 </div>
 
                 <div class="inputItem">
                     <p>Age</p>
-                    <input type="number" id="age" placeholder="E.G 35" required>
+                    <input type="number" id="age" min="0" max="100" placeholder="E.G 35" title="Please enter a valid age" required>
                 </div>
 
                 <div class="inputItem">
@@ -46,12 +46,10 @@
 
                 <div class="inputItem">
                     <p>Region</p>
-                    <input type="text" id="region" placeholder="E.G Auckland" required>
+                    <input type="text" id="region" pattern="[A-Za-z ]+" placeholder="E.G Auckland" title="Please enter a valid region" required>
                 </div>
-
+                <input id="submit" type="submit" onclick="writeRec()" class="submitButton">
             </form>
-
-            <button onclick="writeRec()" class="submitButton">Submit</button>
         </div>
     </div>
 
