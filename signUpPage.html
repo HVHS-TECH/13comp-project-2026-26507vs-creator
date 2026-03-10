@@ -36,8 +36,8 @@
 
                 <div class="inputItem">
                     <p>Gender</p>
-                    <select id="gender">
-                        <option>Select One</option>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select One</option>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
@@ -48,7 +48,7 @@
                     <p>Region</p>
                     <input type="text" id="region" pattern="[A-Za-z ]+" placeholder="E.G Auckland" title="Please enter a valid region" required>
                 </div>
-                <input id="submit" type="submit" onclick="writeRec()" class="submitButton">
+                <input id="centreColumn" type="submit" onclick="writeRec()" class="submitButton">
             </form>
         </div>
     </div>

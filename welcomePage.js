@@ -27,3 +27,10 @@ function fb_logout() {
 
 // Make it accessible from the HTML button
 window.fb_logout = fb_logout;
+
+function showPopup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+window.showPopup = showPopup;
