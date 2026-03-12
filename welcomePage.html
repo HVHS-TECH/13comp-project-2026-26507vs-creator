@@ -26,8 +26,15 @@
   </nav>
 
   <dialog id="my-dialog">
-    <p>This dialog was opened using an invoker command.</p>
-    <button commandfor="my-dialog" command="close">Close</button>
+    <div class="header">
+      <h3>Help</h3>
+    </div>
+    <p>Click on the buttons below to enter the game lobbies, 
+      where you can join or create games that are either public or private. 
+      You can also view the leaderboard and read the game instructions. 
+      To play a game, either host your own game or select one that another 
+      player is hosting, then follow the instructions provided to start playing.</p>
+    <button commandfor="my-dialog" command="close" id="closeDialog">Close</button>
   </dialog>
 
   <div class="splitContainer">

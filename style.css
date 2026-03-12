@@ -42,7 +42,23 @@ ul li a,
   text-decoration: none;
 }
 
+ul li button {
+  background-color: #f3f3f3;
+  display: block;
+  color: rgb(105, 103, 103);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 80px;
+  height: 46px;
+  border: none;
+}
+
 ul li a:hover {
+  background-color: #dddddd;
+}
+
+ul li button:hover {
   background-color: #dddddd;
 }
 
@@ -97,63 +113,31 @@ ul li a.active {
   color: rgb(105, 103, 103);
 }
 
+#my-dialog {
+  border-color: rgb(105, 103, 103);
+  width: 25vw;
+}
 
-.popup-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.35);
-      display: none;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 3rem;
-      z-index: 100;
-    }
+#closeDialog {
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(105, 103, 103);
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  display: block;
+  margin: auto;
+}
 
-    .popup-overlay.show {
-      display: flex;
-    }
+.header {
+  border-bottom: 1px solid rgb(105, 103, 103);
+  align-items: center;
+}
 
-    .popup {
-      position: relative;
-      background: #fff;
-      border-radius: 8px;
-      width: 320px;
-      max-width: calc(100% - 2rem);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-      overflow: hidden;
-    }
-
-    .popup::after {
-      content: "";
-      position: absolute;
-      bottom: 100%;
-      left: 24px;
-      border-width: 8px;
-      border-style: solid;
-      border-color: transparent transparent #fff transparent;
-    }
-
-    .popup-header {
-      padding: 0.1rem 1rem;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .popup-body {
-      padding: 1rem;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
-    .popup-close {
-      background: transparent;
-      border: none;
-      font-size: 1.25rem;
-      cursor: pointer;
-    }
-    
+.header h3 {
+  margin: 0;
+  padding: 5px 5px;
+}
 /* ===== LOGIN PAGE ===== */
 .loginPage {
   height: 100vh;
