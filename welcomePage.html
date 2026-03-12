@@ -13,17 +13,22 @@
   <nav>
     <ul>
       <li><a class="active" href="default.asp">Home</a></li>
-      <!-- <div class="popup"> -->
-      <li><a href="#" onclick="showPopup()">Help</a></li>
-        <!-- <span class="popuptext" id="myPopup">A Simple Popup!</span> -->
-      <!-- </div> -->
+
+      <li><button href="#" command="show-modal" commandfor="my-dialog">Help</button></li>
+
       <li><a href="#" onclick="fb_logout()">Log out</a></li>
 
       <li class="welcome">Welcome to the Website</li>
 
       <li style="float:right" id="userStatus"></li>
     </ul>
+
   </nav>
+
+  <dialog id="my-dialog">
+    <p>This dialog was opened using an invoker command.</p>
+    <button commandfor="my-dialog" command="close">Close</button>
+  </dialog>
 
   <div class="splitContainer">
 

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+    }
+
+    nav {
+      background: #333;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      display: none;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 3rem;
+      z-index: 100;
+    }
+
+    .popup-overlay.show {
+      display: flex;
+    }
+
+    .popup {
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      width: 320px;
+      max-width: calc(100% - 2rem);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 24px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+    }
+
+    .popup-header {
+      padding: 0.1rem 1rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .popup-body {
+      padding: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .popup-close {
+      background: transparent;
+      border: none;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" id="helpLink">Help</a>
+  </nav>
+
+  <div id="helpPopup" class="popup-overlay">
+    <div class="popup">
+      <div class="popup-header">
+        <h2 id="helpTitle">Help</h2>
+        <button class="popup-close">×</button>
+      </div>
+      <div class="popup-body">
+        <p>Add your help text, links, or instructions here.</p>
+        <p>Click outside the box or the × button to close.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const helpLink = document.getElementById('helpLink');
+    const helpPopup = document.getElementById('helpPopup');
+    const closeBtn = helpPopup.querySelector('.popup-close');
+
+    const openHelp = () => {
+      helpPopup.classList.add('show');
+      helpPopup.setAttribute('aria-hidden', 'false');
+    };
+
+    const closeHelp = () => {
+      helpPopup.classList.remove('show');
+      helpPopup.setAttribute('aria-hidden', 'true');
+    };
+
+    helpLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      openHelp();
+    });
+
+    closeBtn.addEventListener('click', closeHelp);
+
+  </script>
+</body>
+</html>

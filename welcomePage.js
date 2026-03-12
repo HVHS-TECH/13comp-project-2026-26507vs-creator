@@ -8,10 +8,26 @@
 // 
 // Diagnostic code lines have a comment appended to them //DIAG
 /**************************************************************/
-import { signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { ref, get } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 import { initFirebase } from './script.js';
-const { AUTH } = initFirebase(); // Get your Firebase auth object
+const { AUTH, fb_gamedb } = initFirebase(); // Get your Firebase auth and database objects
 
+function displayUsername() {
+    onAuthStateChanged(AUTH, (user) => {
+        if (!user) return;
+        const dbRef = ref(fb_gamedb, "users/" + user.uid);
+        get(dbRef).then(snapshot => {
+            if (snapshot.exists()) {
+                const username = snapshot.val().username;
+                const target = document.getElementById("userStatus")
+                target.textContent = "Logged in as: " + username;
+            }
+        });
+    });
+}
+
+window.addEventListener("load", displayUsername);
 
 function fb_logout() {
     signOut(AUTH)
@@ -27,10 +43,3 @@ function fb_logout() {
 
 // Make it accessible from the HTML button
 window.fb_logout = fb_logout;
-
-function showPopup() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
-
-window.showPopup = showPopup;

@@ -14,14 +14,6 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signO
 
     from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
-
-function temporary() {
-let username = "John";  // change this to whatever name
-
-document.getElementById("userStatus").textContent =
-  "Logged in as: " + username;
-}
-
 export function initFirebase(){
       // Your web app's Firebase configuration
       const firebaseConfig = {

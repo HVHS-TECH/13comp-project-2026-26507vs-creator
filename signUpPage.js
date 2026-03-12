@@ -35,8 +35,11 @@ function writeRec() {
 
         set(dbReference, {
             name: name,
+            username: username,
+            email: email,
             age: age,
-            gender: gender
+            gender: gender,
+            region: region,
         })
 
         .then(() => {
